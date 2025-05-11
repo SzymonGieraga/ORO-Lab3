@@ -58,6 +58,6 @@ public class ParticipantService {
         return participantRepo
                 .getPresenterWithMostPresentations(PageRequest.of(0, 1))
                 .getContent()
-                .getFirst();
+                .get(0);
     }
 }
