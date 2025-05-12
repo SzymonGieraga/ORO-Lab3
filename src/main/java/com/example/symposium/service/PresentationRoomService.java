@@ -26,7 +26,7 @@ public class PresentationRoomService {
         return presentationRoomRepo.saveAll(presentationRooms);
     }
 
-    List<RoomPresentationsCountDto> getPresentationCountByRoom() {
+    public List<RoomPresentationsCountDto> getPresentationCountByRoom() {
         return presentationRoomRepo.getPresentationCountByRoom();
     }
 }

@@ -25,7 +25,7 @@ public class TopicService {
         return topicRepo.saveAll(topics);
     }
 
-    List<TopicDto> getPresentationsTopicsBySymposiumId(Integer symposiumId) {
+    public List<TopicDto> getPresentationsTopicsBySymposiumId(Integer symposiumId) {
         return topicRepo.getPresentationsTopicsBySymposiumId(symposiumId)
                 .stream()
                 .map(t -> new TopicDto(t.getTitle()))
